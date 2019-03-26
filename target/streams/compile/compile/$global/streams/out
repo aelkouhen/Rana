@@ -1,0 +1,7 @@
+[0m[[0m[33mwarn[0m] [0m[0m/Users/aelkouhen/IdeaProjects/lyne/src/main/scala/com/carhub/api/utils/jsonapi/JsonApiHelper.scala:38:23: non-variable type argument AnyRef in type pattern Option[AnyRef] is unchecked since it is eliminated by erasure[0m
+[0m[[0m[33mwarn[0m] [0m[0m    case scalaOption: Option[AnyRef] => scalaOption.orNull[0m
+[0m[[0m[33mwarn[0m] [0m[0m                      ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/aelkouhen/IdeaProjects/lyne/src/main/scala/com/carhub/api/utils/jsonapi/JsonApiHelper.scala:39:22: non-variable type argument AnyRef in type pattern java.util.Optional[AnyRef] is unchecked since it is eliminated by erasure[0m
+[0m[[0m[33mwarn[0m] [0m[0m    case javaOption: Optional[AnyRef] => if (javaOption.isPresent) javaOption.get() else null[0m
+[0m[[0m[33mwarn[0m] [0m[0m                     ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mtwo warnings found[0m
