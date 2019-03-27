@@ -32,8 +32,4 @@ abstract class Resource {
 
   @BeanProperty
   var content: Array[Byte] = _
-
-  override def toString: String = {
-    name
-  }
 }

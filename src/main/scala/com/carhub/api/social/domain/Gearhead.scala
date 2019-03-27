@@ -50,9 +50,11 @@ class Gearhead extends Serializable{
   var currentLocation: String = _
 
   @BeanProperty
+  @Type(`type` = "uuid-char")
   var profilePhotoId: UUID = _
 
   @BeanProperty
+  @Type(`type` = "uuid-char")
   var coverPhotoId: UUID = _
 
   @BeanProperty
