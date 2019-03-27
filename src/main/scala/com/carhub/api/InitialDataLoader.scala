@@ -1,16 +1,27 @@
 package com.carhub.api
 
+import java.awt.image.BufferedImage
 import java.text.SimpleDateFormat
-import java.util.{Calendar, Locale}
+import java.util.{Calendar, Locale, UUID}
 
 import com.carhub.api.social.domain._
+import com.carhub.api.social.domain.dto.Photo
 import com.carhub.api.social.domain.enumerations._
 import com.carhub.api.social.repositories._
 import com.google.common.io.Files
-import org.springframework.beans.factory.annotation.Autowired
+import javax.imageio.ImageIO
 import org.springframework.boot.{ApplicationArguments, ApplicationRunner}
 import org.springframework.core.io.ClassPathResource
 import org.springframework.stereotype.Component
+import org.springframework.beans.factory.annotation.Value
+import org.springframework.beans.factory.annotation.Autowired
+import org.springframework.cloud.client.ServiceInstance
+import org.springframework.cloud.client.loadbalancer.LoadBalancerClient
+import org.springframework.web.client.RestTemplate
+import org.springframework.http.HttpEntity
+import org.springframework.web.reactive.function.BodyInserters
+import org.springframework.web.reactive.function.client.WebClient
+import reactor.core.publisher.Mono
 
 
 @Component
@@ -30,6 +41,16 @@ class InitialDataLoader(@Autowired
                                   val topicMembershipRepository: TopicMembershipRepository)
                                   extends ApplicationRunner {
 
+
+  @Autowired
+  val restTemplate : RestTemplate = null
+
+  @Autowired
+  val loadBalancerClient : LoadBalancerClient = null
+
+  @Value("${service.media.serviceId}")
+  val mediaService : String = null
+
   def run(args: ApplicationArguments): Unit = {
 
     val gearhead = new Gearhead
@@ -42,7 +63,7 @@ class InitialDataLoader(@Autowired
     val date = format.parse("15/11/1986")
     gearhead.birthDay = date
     gearhead.currentLocation = "36 Rue Saint Henri, 59110 La Madeleine"
-
+    gearhead.coverPhotoId = createPhoto()
 
     val now = Calendar.getInstance().getTime()
     gearhead.updateTime = now
@@ -162,23 +183,51 @@ class InitialDataLoader(@Autowired
     messageRecipientRepository.save(messageRecipient1)
   }
 
-/*
-  private def createPhoto(gearhead: Gearhead) = {
+
+  private def createPhoto() : UUID = {
+    val serviceInstance : ServiceInstance = loadBalancerClient.choose(mediaService)
+    if(serviceInstance == null)
+      throw new RuntimeException("Media Service is Down")
+
     val photo = new Photo
     val picture = new ClassPathResource("images/myPic.jpg")
-    val inputStream = picture.getInputStream
+    var inputStream = picture.getInputStream
+    val bimg : BufferedImage = ImageIO.read(inputStream)
+    inputStream = picture.getInputStream
+    photo.width = bimg.getWidth
+    photo.height = bimg.getHeight
     val arrayPic = Stream.continually(inputStream.read).takeWhile(-1 !=).map(_.toByte).toArray
     inputStream.close()
-    photo.size = picture.contentLength()
-    photo.extension = Files.getFileExtension(picture.getFilename)
+    val connection = picture.getURL.openConnection
+    photo.mimeType = connection.getContentType
+    photo.size = picture.contentLength
+    photo.name = Files.getNameWithoutExtension(picture.getFilename)
+    photo.format = Files.getFileExtension(picture.getFilename)
     photo.caption = "Amine's Pic"
     photo.created = Calendar.getInstance().getTime()
-    photo.owner = gearhead
     photo.content = arrayPic
-    photoRepository.saveAndFlush(photo)
 
-    photo
+    val body = new HttpEntity(photo)
+    //val response = restTemplate.exchange(url, HttpMethod.POST, body, classOf[Photo])
+    val webClient = WebClient.builder()
+                    .baseUrl(serviceInstance.getUri.toString)
+                    //.defaultHeader(HttpHeaders.AUTHORIZATION, "Bearer " + token )
+                    .build()
+
+    val mono : Mono[Photo] =  webClient.post().uri("/media/v1/photos")
+      .body(BodyInserters.fromObject(photo))
+      .retrieve()
+      .bodyToMono(classOf[Photo])
+      .doOnSuccess( p => {
+        println(p.id)
+      })
+      .doOnError(e =>{
+        e.printStackTrace()
+        println("ERRROOOOOR " + e)
+      })
+
+    null
   }
-*/
+
 
 }

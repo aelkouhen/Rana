@@ -33,6 +33,8 @@ dependencies {
     implementation 'org.springframework.cloud:spring-cloud-starter-security'
     implementation 'org.springframework.cloud:spring-cloud-starter-oauth2'
     implementation 'org.springframework.cloud:spring-cloud-starter-eureka:1.4.6.RELEASE'
+    implementation 'org.springframework.boot:spring-boot-starter-webflux'
+    implementation 'org.projectreactor:reactor-spring:1.0.1.RELEASE'
     implementation 'io.springfox:springfox-bean-validators:2.9.2'
     implementation 'org.scala-lang:scala-library'
     implementation 'com.typesafe.scala-logging:scala-logging_2.12:3.9.0'
