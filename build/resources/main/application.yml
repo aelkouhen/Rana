@@ -33,5 +33,7 @@ eureka:
 oauth2:
   service:
     name: mima
+  token-get-path: auth/oauth/token
   token-check-path: auth/oauth/check_token
   auth-server-uri: http://localhost:9000/
+  application-secret: QURNSU5fQVBQOmFkbWlu

@@ -36,3 +36,4 @@ oauth2:
   token-get-path: auth/oauth/token
   token-check-path: auth/oauth/check_token
   auth-server-uri: http://localhost:9000/
+  application-secret: QURNSU5fQVBQOmFkbWlu
