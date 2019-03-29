@@ -17,7 +17,6 @@ import org.springframework.stereotype.Component
 import org.springframework.beans.factory.annotation.Value
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.cloud.client.ServiceInstance
-import org.springframework.cloud.client.loadbalancer.LoadBalancerClient
 import org.springframework.http.{HttpHeaders, HttpMethod}
 import org.springframework.web.reactive.function.BodyInserters
 import org.springframework.web.reactive.function.client.WebClient
@@ -39,17 +38,14 @@ class InitialDataLoader(@Autowired
                                   val topicMembershipRepository: TopicMembershipRepository)
                                   extends ApplicationRunner {
 
-  @Autowired
-  val loadBalancerClient : LoadBalancerClient = null
-
-  @Value("${media.service.name}")
-  val mediaService : String = null
-
   @Value("${security.oauth2.resource.token-type}")
   val tokenType : String = null
 
   @Value("${media.photo-endpoint}")
   val photoEndpoint : String = null
+
+  @Autowired
+  val mediaService : ServiceInstance = null
 
   def run(args: ApplicationArguments): Unit = {
 
@@ -185,10 +181,6 @@ class InitialDataLoader(@Autowired
 
 
   private def createPhoto() : UUID = {
-    val mediaServiceInstance : ServiceInstance = loadBalancerClient.choose(mediaService)
-    if(mediaServiceInstance == null)
-      throw new RuntimeException("Media Service is Down")
-
     val photo = new Photo
     val picture = new ClassPathResource("images/myPic.jpg")
     var inputStream = picture.getInputStream
@@ -208,7 +200,7 @@ class InitialDataLoader(@Autowired
     photo.content = arrayPic
 
     val client = WebClient.builder()
-                    .baseUrl(mediaServiceInstance.getUri.toString)
+                    .baseUrl(mediaService.getUri.toString)
                     .defaultHeader(HttpHeaders.AUTHORIZATION, tokenType + " " + JwtUtil.token())
                     .build()
 
