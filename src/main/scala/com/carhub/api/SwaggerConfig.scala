@@ -74,7 +74,7 @@ class SwaggerConfig {
   private def getInfos: ApiInfo = {
     new ApiInfoBuilder().
       title("Rana API").
-      //description(swaggerAPIDescription).
+      description(swaggerAPIDescription).
       version(apiVersion).build()
   }
 
@@ -106,7 +106,8 @@ class SwaggerConfig {
        |
        |How to use the API :
        |  - Run the Eureka discovery server.
-       |  - Get an OAuth2 Access Token with Authentication Service (https://github.com/aelkouhen/Mima)
+       |  - Run the Media management Service (https://github.com/aelkouhen/Mino).
+       |  - Get an OAuth2 Access Token with Authentication Service (https://github.com/aelkouhen/Mima).
        |  - Calling the API with the paths bellow:
      """.stripMargin
 }
