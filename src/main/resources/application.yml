@@ -36,3 +36,8 @@ oauth2:
   token-get-path: auth/oauth/token
   token-check-path: auth/oauth/check_token
   auth-server-uri: http://localhost:9000/
+
+media:
+  service:
+    name: mino
+  photo-endpoint: media/v1/photos

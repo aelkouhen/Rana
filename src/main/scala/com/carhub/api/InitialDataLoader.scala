@@ -42,11 +42,14 @@ class InitialDataLoader(@Autowired
   @Autowired
   val loadBalancerClient : LoadBalancerClient = null
 
-  @Value("${service.media.serviceId}")
+  @Value("${media.service.name}")
   val mediaService : String = null
 
   @Value("${security.oauth2.resource.token-type}")
   val tokenType : String = null
+
+  @Value("${media.photo-endpoint}")
+  val photoEndpoint : String = null
 
   def run(args: ApplicationArguments): Unit = {
 
@@ -211,7 +214,7 @@ class InitialDataLoader(@Autowired
 
     val request = client
       .method(HttpMethod.POST)
-      .uri("/media/v1/photos").body(BodyInserters.fromObject(photo))
+      .uri(photoEndpoint).body(BodyInserters.fromObject(photo))
 
     val result = request.retrieve()
       .bodyToMono(classOf[Photo])

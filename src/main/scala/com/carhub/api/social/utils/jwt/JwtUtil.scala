@@ -19,7 +19,7 @@ object JwtUtil {
   @Autowired
   val loadBalancerClient : LoadBalancerClient = null
 
-  @Value("${service.auth.serviceId}")
+  @Value("${oauth2.service.name}")
   val authService : String = null
 
   @Value("${security.oauth2.resource.client.client-id}")
