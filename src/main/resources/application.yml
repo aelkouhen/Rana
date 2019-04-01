@@ -41,3 +41,5 @@ media:
   service:
     name: mino
   photo-endpoint: media/v1/photos
+  file-endpoint: media/v1/files
+  video-endpoint: media/v1/videos

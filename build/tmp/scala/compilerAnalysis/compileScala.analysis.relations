@@ -51,6 +51,9 @@ products:
    /Users/aelkouhen/IdeaProjects/Rana/src/main/scala/com/carhub/api/social/utils/jwt/JwtUtil.scala -> /Users/aelkouhen/IdeaProjects/Rana/build/classes/scala/main/com/carhub/api/social/utils/jwt/JwtUtil$.class
    /Users/aelkouhen/IdeaProjects/Rana/src/main/scala/com/carhub/api/social/utils/jwt/JwtUtil.scala -> /Users/aelkouhen/IdeaProjects/Rana/build/classes/scala/main/com/carhub/api/social/utils/jwt/JwtUtil.class
    /Users/aelkouhen/IdeaProjects/Rana/src/main/scala/com/carhub/api/social/utils/jwt/JwtUtil.scala -> /Users/aelkouhen/IdeaProjects/Rana/build/classes/scala/main/com/carhub/api/social/utils/jwt/JwtUtilConfig.class
+   /Users/aelkouhen/IdeaProjects/Rana/src/main/scala/com/carhub/api/social/utils/media/MediaUtil.scala -> /Users/aelkouhen/IdeaProjects/Rana/build/classes/scala/main/com/carhub/api/social/utils/media/MediaUtil$.class
+   /Users/aelkouhen/IdeaProjects/Rana/src/main/scala/com/carhub/api/social/utils/media/MediaUtil.scala -> /Users/aelkouhen/IdeaProjects/Rana/build/classes/scala/main/com/carhub/api/social/utils/media/MediaUtil.class
+   /Users/aelkouhen/IdeaProjects/Rana/src/main/scala/com/carhub/api/social/utils/media/MediaUtil.scala -> /Users/aelkouhen/IdeaProjects/Rana/build/classes/scala/main/com/carhub/api/social/utils/media/MediaUtilConfig.class
 binary dependencies:
    /Users/aelkouhen/IdeaProjects/Rana/src/main/scala/com/carhub/api/Application.scala -> /Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/rt.jar
    /Users/aelkouhen/IdeaProjects/Rana/src/main/scala/com/carhub/api/Application.scala -> /Users/aelkouhen/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-library/2.12.8/36b234834d8f842cdde963c8591efae6cf413e3f/scala-library-2.12.8.jar
@@ -86,12 +89,9 @@ binary dependencies:
    /Users/aelkouhen/IdeaProjects/Rana/src/main/scala/com/carhub/api/ResourceServerConfig.scala -> /Users/aelkouhen/.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/5.1.5.RELEASE/58b10c61f6bf2362909d884813c4049b657735f5/spring-beans-5.1.5.RELEASE.jar
    /Users/aelkouhen/IdeaProjects/Rana/src/main/scala/com/carhub/api/ResourceServerConfig.scala -> /Users/aelkouhen/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/5.1.5.RELEASE/d39299241a2c8353d83f0f0c84d3677973da7c57/spring-context-5.1.5.RELEASE.jar
    /Users/aelkouhen/IdeaProjects/Rana/src/main/scala/com/carhub/api/SpringBootConfig.scala -> /Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/rt.jar
-   /Users/aelkouhen/IdeaProjects/Rana/src/main/scala/com/carhub/api/SpringBootConfig.scala -> /Users/aelkouhen/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-library/2.12.8/36b234834d8f842cdde963c8591efae6cf413e3f/scala-library-2.12.8.jar
    /Users/aelkouhen/IdeaProjects/Rana/src/main/scala/com/carhub/api/SpringBootConfig.scala -> /Users/aelkouhen/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-autoconfigure/2.1.3.RELEASE/58e07f69638a3ca13dffe8a2b68d284af376d105/spring-boot-autoconfigure-2.1.3.RELEASE.jar
-   /Users/aelkouhen/IdeaProjects/Rana/src/main/scala/com/carhub/api/SpringBootConfig.scala -> /Users/aelkouhen/.gradle/caches/modules-2/files-2.1/org.springframework.cloud/spring-cloud-commons/2.1.0.RELEASE/7104c505dee6cb0979589a0010bd6b4db13b1589/spring-cloud-commons-2.1.0.RELEASE.jar
    /Users/aelkouhen/IdeaProjects/Rana/src/main/scala/com/carhub/api/SpringBootConfig.scala -> /Users/aelkouhen/.gradle/caches/modules-2/files-2.1/org.springframework.cloud/spring-cloud-netflix-eureka-client/2.1.0.RELEASE/90d9174bfdb439f47feb7b1fa2d597cfebfb3ea8/spring-cloud-netflix-eureka-client-2.1.0.RELEASE.jar
    /Users/aelkouhen/IdeaProjects/Rana/src/main/scala/com/carhub/api/SpringBootConfig.scala -> /Users/aelkouhen/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-jpa/2.1.5.RELEASE/968d63d6fd8bfb0bd878e71427f66351e235c73c/spring-data-jpa-2.1.5.RELEASE.jar
-   /Users/aelkouhen/IdeaProjects/Rana/src/main/scala/com/carhub/api/SpringBootConfig.scala -> /Users/aelkouhen/.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/5.1.5.RELEASE/58b10c61f6bf2362909d884813c4049b657735f5/spring-beans-5.1.5.RELEASE.jar
    /Users/aelkouhen/IdeaProjects/Rana/src/main/scala/com/carhub/api/SpringBootConfig.scala -> /Users/aelkouhen/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/5.1.5.RELEASE/d39299241a2c8353d83f0f0c84d3677973da7c57/spring-context-5.1.5.RELEASE.jar
    /Users/aelkouhen/IdeaProjects/Rana/src/main/scala/com/carhub/api/SpringSecurityConfig.scala -> /Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/rt.jar
    /Users/aelkouhen/IdeaProjects/Rana/src/main/scala/com/carhub/api/SpringSecurityConfig.scala -> /Users/aelkouhen/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-library/2.12.8/36b234834d8f842cdde963c8591efae6cf413e3f/scala-library-2.12.8.jar
@@ -241,6 +241,11 @@ binary dependencies:
    /Users/aelkouhen/IdeaProjects/Rana/src/main/scala/com/carhub/api/social/utils/jwt/JwtUtil.scala -> /Users/aelkouhen/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/5.1.5.RELEASE/aacc4555108f3da913a58114b2aebc819f58cce4/spring-core-5.1.5.RELEASE.jar
    /Users/aelkouhen/IdeaProjects/Rana/src/main/scala/com/carhub/api/social/utils/jwt/JwtUtil.scala -> /Users/aelkouhen/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/5.1.5.RELEASE/c37c4363be4ad6c5f67e3f9f020497e2d599e325/spring-web-5.1.5.RELEASE.jar
    /Users/aelkouhen/IdeaProjects/Rana/src/main/scala/com/carhub/api/social/utils/jwt/JwtUtil.scala -> /Users/aelkouhen/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webflux/5.1.5.RELEASE/dd4cb3ebfa7a942aebcf76a9153ce507c30dbecc/spring-webflux-5.1.5.RELEASE.jar
+   /Users/aelkouhen/IdeaProjects/Rana/src/main/scala/com/carhub/api/social/utils/media/MediaUtil.scala -> /Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/rt.jar
+   /Users/aelkouhen/IdeaProjects/Rana/src/main/scala/com/carhub/api/social/utils/media/MediaUtil.scala -> /Users/aelkouhen/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-library/2.12.8/36b234834d8f842cdde963c8591efae6cf413e3f/scala-library-2.12.8.jar
+   /Users/aelkouhen/IdeaProjects/Rana/src/main/scala/com/carhub/api/social/utils/media/MediaUtil.scala -> /Users/aelkouhen/.gradle/caches/modules-2/files-2.1/org.springframework.cloud/spring-cloud-commons/2.1.0.RELEASE/7104c505dee6cb0979589a0010bd6b4db13b1589/spring-cloud-commons-2.1.0.RELEASE.jar
+   /Users/aelkouhen/IdeaProjects/Rana/src/main/scala/com/carhub/api/social/utils/media/MediaUtil.scala -> /Users/aelkouhen/.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/5.1.5.RELEASE/58b10c61f6bf2362909d884813c4049b657735f5/spring-beans-5.1.5.RELEASE.jar
+   /Users/aelkouhen/IdeaProjects/Rana/src/main/scala/com/carhub/api/social/utils/media/MediaUtil.scala -> /Users/aelkouhen/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/5.1.5.RELEASE/d39299241a2c8353d83f0f0c84d3677973da7c57/spring-context-5.1.5.RELEASE.jar
 source dependencies:
    /Users/aelkouhen/IdeaProjects/Rana/src/main/scala/com/carhub/api/InitialDataLoader.scala -> /Users/aelkouhen/IdeaProjects/Rana/src/main/scala/com/carhub/api/social/domain/Channel.scala
    /Users/aelkouhen/IdeaProjects/Rana/src/main/scala/com/carhub/api/InitialDataLoader.scala -> /Users/aelkouhen/IdeaProjects/Rana/src/main/scala/com/carhub/api/social/domain/Choice.scala
@@ -271,7 +276,7 @@ source dependencies:
    /Users/aelkouhen/IdeaProjects/Rana/src/main/scala/com/carhub/api/InitialDataLoader.scala -> /Users/aelkouhen/IdeaProjects/Rana/src/main/scala/com/carhub/api/social/repositories/ThreadRepository.scala
    /Users/aelkouhen/IdeaProjects/Rana/src/main/scala/com/carhub/api/InitialDataLoader.scala -> /Users/aelkouhen/IdeaProjects/Rana/src/main/scala/com/carhub/api/social/repositories/TopicMembershipRepository.scala
    /Users/aelkouhen/IdeaProjects/Rana/src/main/scala/com/carhub/api/InitialDataLoader.scala -> /Users/aelkouhen/IdeaProjects/Rana/src/main/scala/com/carhub/api/social/utils/jwt/JwtUtil.scala
-   /Users/aelkouhen/IdeaProjects/Rana/src/main/scala/com/carhub/api/SpringBootConfig.scala -> /Users/aelkouhen/IdeaProjects/Rana/src/main/scala/com/carhub/api/social/utils/exception/ServiceUnavailableException.scala
+   /Users/aelkouhen/IdeaProjects/Rana/src/main/scala/com/carhub/api/InitialDataLoader.scala -> /Users/aelkouhen/IdeaProjects/Rana/src/main/scala/com/carhub/api/social/utils/media/MediaUtil.scala
    /Users/aelkouhen/IdeaProjects/Rana/src/main/scala/com/carhub/api/social/domain/Channel.scala -> /Users/aelkouhen/IdeaProjects/Rana/src/main/scala/com/carhub/api/social/domain/Poll.scala
    /Users/aelkouhen/IdeaProjects/Rana/src/main/scala/com/carhub/api/social/domain/Channel.scala -> /Users/aelkouhen/IdeaProjects/Rana/src/main/scala/com/carhub/api/social/domain/Thread.scala
    /Users/aelkouhen/IdeaProjects/Rana/src/main/scala/com/carhub/api/social/domain/Channel.scala -> /Users/aelkouhen/IdeaProjects/Rana/src/main/scala/com/carhub/api/social/domain/Topic.scala
@@ -322,6 +327,7 @@ source dependencies:
    /Users/aelkouhen/IdeaProjects/Rana/src/main/scala/com/carhub/api/social/utils/exception/ApiErrorHandler.scala -> /Users/aelkouhen/IdeaProjects/Rana/src/main/scala/com/carhub/api/social/utils/exception/ElementNotCreatedException.scala
    /Users/aelkouhen/IdeaProjects/Rana/src/main/scala/com/carhub/api/social/utils/exception/ApiErrorHandler.scala -> /Users/aelkouhen/IdeaProjects/Rana/src/main/scala/com/carhub/api/social/utils/exception/ElementNotFoundException.scala
    /Users/aelkouhen/IdeaProjects/Rana/src/main/scala/com/carhub/api/social/utils/exception/ApiErrorHandler.scala -> /Users/aelkouhen/IdeaProjects/Rana/src/main/scala/com/carhub/api/social/utils/exception/ElementNotUpdatedException.scala
+   /Users/aelkouhen/IdeaProjects/Rana/src/main/scala/com/carhub/api/social/utils/media/MediaUtil.scala -> /Users/aelkouhen/IdeaProjects/Rana/src/main/scala/com/carhub/api/social/utils/exception/ServiceUnavailableException.scala
 external dependencies:
 class names:
    /Users/aelkouhen/IdeaProjects/Rana/src/main/scala/com/carhub/api/Application.scala -> com.carhub.api.Application
@@ -376,3 +382,6 @@ class names:
    /Users/aelkouhen/IdeaProjects/Rana/src/main/scala/com/carhub/api/social/utils/jwt/JwtUtil.scala -> com.carhub.api.social.utils.jwt.JwtUtil
    /Users/aelkouhen/IdeaProjects/Rana/src/main/scala/com/carhub/api/social/utils/jwt/JwtUtil.scala -> com.carhub.api.social.utils.jwt.JwtUtil$
    /Users/aelkouhen/IdeaProjects/Rana/src/main/scala/com/carhub/api/social/utils/jwt/JwtUtil.scala -> com.carhub.api.social.utils.jwt.JwtUtilConfig
+   /Users/aelkouhen/IdeaProjects/Rana/src/main/scala/com/carhub/api/social/utils/media/MediaUtil.scala -> com.carhub.api.social.utils.media.MediaUtil
+   /Users/aelkouhen/IdeaProjects/Rana/src/main/scala/com/carhub/api/social/utils/media/MediaUtil.scala -> com.carhub.api.social.utils.media.MediaUtil$
+   /Users/aelkouhen/IdeaProjects/Rana/src/main/scala/com/carhub/api/social/utils/media/MediaUtil.scala -> com.carhub.api.social.utils.media.MediaUtilConfig

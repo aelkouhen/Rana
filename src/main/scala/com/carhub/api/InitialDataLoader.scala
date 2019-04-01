@@ -9,6 +9,7 @@ import com.carhub.api.social.domain.dto.Photo
 import com.carhub.api.social.domain.enumerations._
 import com.carhub.api.social.repositories._
 import com.carhub.api.social.utils.jwt.JwtUtil
+import com.carhub.api.social.utils.media.MediaUtil
 import com.google.common.io.Files
 import javax.imageio.ImageIO
 import org.springframework.boot.{ApplicationArguments, ApplicationRunner}
@@ -16,7 +17,6 @@ import org.springframework.core.io.ClassPathResource
 import org.springframework.stereotype.Component
 import org.springframework.beans.factory.annotation.Value
 import org.springframework.beans.factory.annotation.Autowired
-import org.springframework.cloud.client.ServiceInstance
 import org.springframework.http.{HttpHeaders, HttpMethod}
 import org.springframework.web.reactive.function.BodyInserters
 import org.springframework.web.reactive.function.client.WebClient
@@ -43,9 +43,6 @@ class InitialDataLoader(@Autowired
 
   @Value("${media.photo-endpoint}")
   val photoEndpoint : String = null
-
-  @Autowired
-  val mediaService : ServiceInstance = null
 
   def run(args: ApplicationArguments): Unit = {
 
@@ -200,7 +197,7 @@ class InitialDataLoader(@Autowired
     photo.content = arrayPic
 
     val client = WebClient.builder()
-                    .baseUrl(mediaService.getUri.toString)
+                    .baseUrl(MediaUtil.mediaService.getUri.toString)
                     .defaultHeader(HttpHeaders.AUTHORIZATION, tokenType + " " + JwtUtil.token())
                     .build()
 

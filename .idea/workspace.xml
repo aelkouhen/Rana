@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="44e03155-913d-4096-ba14-bf7bdb869c22" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/Rana.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/Rana.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/bootJar/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/bootJar/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/scala/compilerAnalysis/compileScala.analysis" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/scala/compilerAnalysis/compileScala.analysis" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/carhub/api/InitialDataLoader.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/carhub/api/InitialDataLoader.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/com/carhub/api/SpringBootConfig.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/carhub/api/SpringBootConfig.scala" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -45,39 +40,39 @@
       <usages-collector id="statistics.lifecycle.project">
         <counts>
           <entry key="project.closed" value="10" />
-          <entry key="project.open.time.0" value="8" />
+          <entry key="project.open.time.0" value="9" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="10" />
+          <entry key="project.opened" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gradle" value="1" />
-          <entry key="scala" value="980" />
-          <entry key="txt" value="70" />
-          <entry key="yml" value="87" />
+          <entry key="scala" value="982" />
+          <entry key="txt" value="84" />
+          <entry key="yml" value="89" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Groovy" value="1" />
-          <entry key="PLAIN_TEXT" value="70" />
-          <entry key="Scala" value="980" />
-          <entry key="YAML" value="87" />
+          <entry key="PLAIN_TEXT" value="84" />
+          <entry key="Scala" value="982" />
+          <entry key="YAML" value="89" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="properties" value="3" />
-          <entry key="scala" value="16" />
+          <entry key="scala" value="17" />
           <entry key="yml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Properties" value="3" />
-          <entry key="Scala" value="16" />
+          <entry key="Scala" value="17" />
           <entry key="YAML" value="1" />
         </counts>
       </usages-collector>
@@ -88,7 +83,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/com/carhub/api/InitialDataLoader.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1154">
+            <state relative-caret-position="315">
               <caret line="202" column="41" selection-start-line="202" selection-start-column="41" selection-end-line="202" selection-end-column="41" />
               <folding>
                 <element signature="e#24#59#0" expanded="true" />
@@ -98,27 +93,27 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="32" column="16" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/com/carhub/api/SpringBootConfig.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="18" selection-start-line="18" selection-end-line="34" selection-end-column="3" />
+            <state relative-caret-position="195">
+              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
               <folding>
-                <element signature="e#24#96#0" expanded="true" />
+                <element signature="e#24#93#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/carhub/api/social/utils/media/MediaUtil.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/messages.properties">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
@@ -126,8 +121,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="42" column="33" selection-start-line="39" selection-end-line="42" selection-end-column="33" />
+            <state relative-caret-position="525">
+              <caret line="43" selection-start-line="43" selection-end-line="43" />
             </state>
           </provider>
         </entry>
@@ -538,7 +533,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/carhub/api/gearheads/domain/enumerations/scriptFile.scala" />
         <option value="$PROJECT_DIR$/src/main/java/com/carhub/api/gearheads/domain/enumerations/UserRole.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/carhub/api/gearheads/domain/enumerations/RelationshipKind.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/carhub/api/gearheads/domain/enumerations/RelationshipStatus.java" />
@@ -584,11 +578,12 @@
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/scala/com/carhub/api/social/utils/jwt/JwtUtil.scala" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/src/main/scala/com/carhub/api/SwaggerConfig.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/carhub/api/InitialDataLoader.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/carhub/api/social/utils/exception/ServiceUnavailableException.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/carhub/api/SpringBootConfig.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/carhub/api/social/utils/media/MediaUtil.scala" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
       </list>
     </option>
   </component>
@@ -605,6 +600,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -673,6 +670,16 @@
               <item name="scala" type="462c0819:PsiDirectoryNode" />
               <item name="api" type="462c0819:PsiDirectoryNode" />
               <item name="social" type="462c0819:PsiDirectoryNode" />
+              <item name="repositories" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Rana" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Rana" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="social" type="462c0819:PsiDirectoryNode" />
               <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -689,19 +696,39 @@
             <path>
               <item name="Rana" type="b2602c69:ProjectViewProjectNode" />
               <item name="Rana" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="social" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="jwt" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Rana" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Rana" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="social" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="media" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Rana" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Rana" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="TF_FMT" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553859325612" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554107454735" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -850,14 +877,21 @@
       <option name="project" value="LOCAL" />
       <updated>1553857428224</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Media resources transfer from API to another (in progress)">
+      <created>1553874853716</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1553874853716</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1680" y="0" width="1920" height="1080" extended-state="6" />
+    <frame x="1680" y="0" width="1920" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22949947" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23162939" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -914,10 +948,10 @@
     <MESSAGE value="Jwt token utility" />
     <MESSAGE value="cleaning useless values" />
     <MESSAGE value="Update Swagger Description" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update Swagger Description" />
+    <MESSAGE value="Media resources transfer from API to another (in progress)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Media resources transfer from API to another (in progress)" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/carhub/api/social/domain/Event.scala" />
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/carhub/api/social/domain/EventMembership.scala" />
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/carhub/api/social/domain/Message.scala" />
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/carhub/api/social/domain/MessageRecipient.scala" />
@@ -1069,6 +1103,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="16" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/carhub/api/SpringSecurityConfig.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -1097,20 +1138,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/messages.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/carhub/api/InitialDataLoader.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="42" column="33" selection-start-line="39" selection-end-line="42" selection-end-column="33" />
+        <state relative-caret-position="315">
+          <caret line="202" column="41" selection-start-line="202" selection-start-column="41" selection-end-line="202" selection-end-column="41" />
+          <folding>
+            <element signature="e#24#59#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/carhub/api/SpringBootConfig.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="16" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
+        <state relative-caret-position="195">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="e#24#93#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1121,25 +1165,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/carhub/api/InitialDataLoader.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/carhub/api/social/utils/media/MediaUtil.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1154">
-          <caret line="202" column="41" selection-start-line="202" selection-start-column="41" selection-end-line="202" selection-end-column="41" />
-          <folding>
-            <element signature="e#24#59#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="30">
+          <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/carhub/api/SpringBootConfig.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="18" selection-start-line="18" selection-end-line="34" selection-end-column="3" />
-          <folding>
-            <element signature="e#24#96#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="525">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/messages.properties">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">
